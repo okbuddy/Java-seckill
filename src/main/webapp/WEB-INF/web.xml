@@ -1,0 +1,26 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+    <!--change version to 3.1-->
+    <!--配置dispatcherServlet
+    mybatis->spring->springMvc
+    -->
+    <servlet>
+        <servlet-name>seckill-servlet</servlet-name>
+
+        <servlet-class >org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!--配置springmvc需要的配置文件-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spring/spring-*.xml</param-value>
+        </init-param>
+    </servlet>
+    <!--所有目录都匹配-->
+    <servlet-mapping>
+        <servlet-name>seckill-servlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>
