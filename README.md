@@ -1,5 +1,5 @@
 # Java-seckill
-Introduction
+Introduction:
 
 This is a second kill project demo .It can be used in the
  seckilling(the quick sell out of newly-advertised goods) of e-shop.
@@ -7,26 +7,30 @@ This is a second kill project demo .It can be used in the
 
 
    Software environment: Tomcat V7.0+ Mysql V5.7+Redis
-　　Hardware environment: Mac OS
-　　Development tools: IDEA
-　　The main language: JAVA
-
 　　
+   Hardware environment: Mac OS
+　　
+   Development tools: IDEA
+　　
+   The main language: JAVA
+
+
 Project language and frame: 
 
 Back-end:  SpringMVC+Sping+MyBatis,log4j,commons-collections
  			protostuff
+
 Front-end: jQuery,Bootstrap,jQuery.countdown,jQuery.cookie,
  			javascript,html,css,jsp
   
 
-Run
+Run:
 
 Run the project in Tomcat7.0 and visit http://localhost:8080/seckill/list
 
 
 
-Project description
+Project description:
 
 After loading the list page, one product can be choose to be seckilled.
 After click the seckill button, brower jumps to another detail page.
